@@ -33,9 +33,10 @@ public class MainApp {
          System.out.println();
       }
       try {
-         System.out.println(userService.findUserFromModelAndSeries("AUDI", 5));
+         System.out.println("Пользователь с автомобилем \"AUDI, 5\": \n"
+                 + userService.findUserFromModelAndSeries("AUDI", 5));
       } catch (NoResultException e) {
-         System.out.println("Нет пользователя с такой машиной.");
+         System.out.println("Нет пользователя с таким автомобилем.");
       }
       context.close();
    }
