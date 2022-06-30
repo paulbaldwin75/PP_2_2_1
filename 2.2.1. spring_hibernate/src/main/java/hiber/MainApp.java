@@ -32,7 +32,6 @@ public class MainApp {
          System.out.println("Car series = " + user.getCar().getSeries());
          System.out.println();
       }
-      //userService.li
       try {
          System.out.println(userService.findUserFromModelAndSeries("AUDI", 5));
       } catch (NoResultException e) {
